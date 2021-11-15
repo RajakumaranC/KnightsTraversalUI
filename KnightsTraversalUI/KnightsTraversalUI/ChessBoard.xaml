@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KnightsTraversalUI.ChessBoard">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="NavTitle" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Text="Knights Traversal" FontSize="Title" FontAttributes="Bold"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray" Padding="5,5,5,5">
+
+            <Grid x:Name="SquaresGrid" BackgroundColor="Brown" Padding="5,5,5,5" />
+
+            <Button Text="Start" Clicked="Button_Clicked" />
+            <Button Text="Destination" Clicked="Button_Clicked" />
+            <Button Text="Find Shortest Path" Clicked="ShortestPath" />
+            <Button Text="Clear Board" Clicked="Clear" />
+
+            <Label Text="" FontSize="Title" TextColor="Black" x:Name="UserInfo"/>
+            <Label Text="" FontSize="Title" TextColor="Black" x:Name="Start"/>
+            <Label Text="" FontSize="Title" TextColor="Black" x:Name="End"/>
+            <Label Text="" FontSize="Default" TextColor="Black" x:Name="Path"/>
+        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
